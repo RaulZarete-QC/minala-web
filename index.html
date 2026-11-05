@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alimentos Minala | Maquila y manufactura por contrato de alimentos</title>
+<meta name="description" content="Alimentos Minala A4, C.A. fabrica, envasa y etiqueta productos alimenticios por contrato en su propia planta. Maquila de alimentos en Las Mercedes, Caracas. Calidad que nutre.">
+<link rel="icon" href="img/minala-isotipo.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alimentos Minala — Calidad que nutre">
+<meta property="og:description" content="Maquila y manufactura por contrato: usted trae la fórmula, nosotros ponemos la planta, la maquinaria y el personal.">
+
+<!-- ===================================================================
+     FOTOS: todas de Pexels (licencia libre, uso comercial permitido,
+     atribución no obligatoria). Enlazadas al servidor de Pexels solo
+     para esta maqueta. Antes de publicar hay que descargarlas, meterlas
+     en img/ y cambiar la URL por la ruta local.
+
+     Portada ........ pexels.com/photo/32578355  (fruta en banda transportadora)
+     Fabricación .... pexels.com/photo/2889193   (procesamiento en planta)
+     Envasado ....... pexels.com/photo/11679691  (línea de producción)
+     Etiquetado ..... pexels.com/photo/449518    (envases etiquetados)
+     Desarrollo ..... pexels.com/photo/3912509   (laboratorio de alimentos)
+     Proceso ........ pexels.com/photo/8877378   (selección en banda)
+
+     PENDIENTE: el teléfono quedó fuera a propósito. Si más adelante
+     quieren uno, va en la cinta superior y en la sección de contacto.
+     =================================================================== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.pexels.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --marino:#172348;
+  --marino-hondo:#0E1730;
+  --verde:#2F5A33;
+  --ambar:#E89A1A;
+  --naranja:#C24A0C;
+  --crema:#F7F1E4;
+  --papel:#FBF8F2;
+  --tinta:#1B2436;
+  --texto:#4E586B;
+  --linea:#E3DCCC;
+  --ancho:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:'Source Sans 3',system-ui,-apple-system,sans-serif;
+  background:var(--papel);color:var(--tinta);line-height:1.65;font-size:17px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ambar);outline-offset:3px}
+.envoltura{max-width:var(--ancho);margin:0 auto;padding:0 26px}
+h1,h2,h3,.marca-texto b{font-family:'Montserrat',system-ui,sans-serif}
+
+/* ---------- cinta superior ---------- */
+.cinta{background:var(--marino);color:#D9DEE9;font-size:14.5px}
+.cinta .envoltura{
+  display:flex;flex-wrap:wrap;gap:6px 30px;justify-content:flex-end;
+  align-items:center;min-height:42px;
+}
+.cinta a,.cinta span{display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.cinta a:hover{color:#fff}
+.cinta svg{width:15px;height:15px;fill:var(--ambar);flex:none}
+@media(max-width:620px){.cinta .envoltura{justify-content:center;font-size:13.5px;gap:4px 18px}}
+
+/* ---------- encabezado ---------- */
+.barra{background:#fff;border-bottom:1px solid var(--linea);position:relative;z-index:3}
+.barra .envoltura{
+  display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:88px;
+}
+.marca{display:flex;align-items:center;gap:13px;text-decoration:none}
+.marca img{width:50px;height:50px}
+.marca-texto b{
+  display:block;font-weight:800;font-size:17px;letter-spacing:.055em;
+  color:var(--marino);line-height:1.1;
+}
+.marca-texto span{
+  display:block;font-size:11px;letter-spacing:.18em;color:var(--verde);
+  font-weight:600;margin-top:3px;
+}
+.menu{display:flex;gap:30px;font-size:15.5px;font-weight:600}
+.menu a{text-decoration:none;color:var(--texto);padding:4px 0;border-bottom:2px solid transparent}
+.menu a:hover{color:var(--marino);border-bottom-color:var(--ambar)}
+@media(max-width:720px){.barra .envoltura{min-height:74px}.marca img{width:42px;height:42px}}
+@media(max-width:560px){.menu{display:none}}
+
+/* ---------- portada ---------- */
+.portada{
+  position:relative;color:#fff;background-color:var(--marino);
+  background-image:url("https://images.pexels.com/photos/32578355/pexels-photo-32578355.jpeg?auto=compress&cs=tinysrgb&w=1800");
+  background-size:cover;background-position:center 55%;
+}
+.portada::before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,
+    rgba(14,23,48,.96) 0%, rgba(23,35,72,.90) 48%, rgba(14,23,48,.55) 100%);
+}
+.portada .envoltura{position:relative;padding-top:96px;padding-bottom:96px}
+.sello{
+  display:inline-block;margin-bottom:20px;font-family:'Montserrat',sans-serif;
+  font-weight:700;font-size:12px;letter-spacing:.17em;color:var(--ambar);
+  border-left:3px solid var(--ambar);padding-left:11px;
+}
+.portada h1{
+  font-weight:800;font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.12;
+  letter-spacing:-.015em;max-width:17ch;
+  text-shadow:0 2px 24px rgba(6,14,32,.45);
+}
+.portada .bajada{margin-top:22px;max-width:50ch;color:#D7DDE8;font-size:1.08rem}
+.acciones{display:flex;flex-wrap:wrap;gap:13px;margin-top:34px}
+.boton{
+  display:inline-flex;align-items:center;gap:9px;padding:14px 28px;border-radius:3px;
+  font-family:'Montserrat',sans-serif;font-weight:700;font-size:14.5px;text-decoration:none;
+}
+.boton svg{width:17px;height:17px;fill:currentColor;flex:none}
+.boton-claro{background:#fff;color:var(--marino)}
+.boton-claro:hover{background:var(--crema)}
+.boton-linea{border:1.5px solid rgba(215,221,232,.6);color:#fff}
+.boton-linea:hover{border-color:#fff;background:rgba(255,255,255,.12)}
+@media(max-width:640px){.portada .envoltura{padding-top:64px;padding-bottom:64px}}
+
+/* la franja de los tres colores del logo */
+.franja{height:6px;background:linear-gradient(90deg,
+  var(--verde) 0 33.33%, var(--naranja) 33.33% 66.66%, var(--ambar) 66.66% 100%)}
+
+/* ---------- secciones ---------- */
+.bloque{padding:84px 0}
+.titulo{
+  font-weight:800;font-size:clamp(1.55rem,2.9vw,2.1rem);letter-spacing:-.01em;
+  color:var(--marino);max-width:24ch;
+}
+.entrada{margin-top:15px;max-width:64ch;color:var(--texto)}
+
+/* ---------- qué hacemos ---------- */
+.tarjetas{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:26px;margin-top:48px;
+}
+.tarjeta{
+  background:#fff;border:1px solid var(--linea);border-radius:4px;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+.tarjeta img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--crema)}
+.tarjeta .cuerpo{padding:22px 24px 26px}
+.tarjeta h3{font-weight:700;font-size:1.06rem;color:var(--marino);line-height:1.3}
+.tarjeta p{margin-top:9px;font-size:.97rem;color:var(--texto)}
+
+/* ---------- cómo funciona ---------- */
+.proceso{background:#fff;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.pareja{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center}
+@media(max-width:880px){.pareja{grid-template-columns:1fr;gap:38px}}
+.foto{position:relative}
+.foto img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.foto::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:6px;border-radius:0 0 4px 4px;
+  background:linear-gradient(90deg,var(--verde) 0 33.33%,var(--naranja) 33.33% 66.66%,var(--ambar) 66.66% 100%);
+}
+.pasos{margin-top:34px;counter-reset:paso}
+.paso{
+  display:grid;grid-template-columns:52px minmax(0,1fr);gap:0 20px;
+  padding:22px 0;border-top:1px solid var(--linea);align-items:start;
+}
+.paso:last-child{border-bottom:1px solid var(--linea)}
+.paso::before{
+  counter-increment:paso;content:counter(paso,decimal-leading-zero);
+  font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.25rem;
+  color:var(--ambar);line-height:1.3;
+}
+.paso h3{font-weight:700;font-size:1.04rem;color:var(--marino)}
+.paso p{margin-top:4px;color:var(--texto);max-width:58ch;font-size:.98rem}
+@media(max-width:620px){.paso{grid-template-columns:1fr;gap:3px}}
+
+/* ---------- banda ---------- */
+.banda{background:var(--marino);color:#fff;padding:52px 0;position:relative;overflow:hidden}
+.banda::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:5px;
+  background:linear-gradient(90deg,var(--verde) 0 33.33%,var(--naranja) 33.33% 66.66%,var(--ambar) 66.66% 100%);
+}
+.banda .envoltura{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;
+}
+.banda h2{font-weight:700;font-size:clamp(1.2rem,2.3vw,1.55rem);max-width:30ch;line-height:1.3}
+.banda p{color:#C3CBDB;margin-top:8px;max-width:46ch}
+
+/* ---------- contacto ---------- */
+.contacto{padding:84px 0;background:var(--crema);border-top:1px solid var(--linea)}
+.datos{display:flex;flex-wrap:wrap;gap:34px 56px;margin-top:44px}
+.dato{flex:0 1 auto}
+.dato span{
+  display:block;font-family:'Montserrat',sans-serif;font-size:11.5px;letter-spacing:.14em;
+  color:var(--verde);font-weight:700;margin-bottom:7px;
+}
+.dato a,.dato strong{font-size:1.1rem;font-weight:600;color:var(--marino);text-decoration:none}
+.dato .correo{white-space:nowrap}
+.dato a:hover{color:var(--naranja);text-decoration:underline}
+.dato em{display:block;font-style:normal;font-weight:400;font-size:.98rem;color:var(--texto);margin-top:2px}
+@media(max-width:620px){
+  .dato .correo{white-space:normal;overflow-wrap:anywhere;font-size:1rem}
+}
+
+/* ---------- pie ---------- */
+.pie{background:var(--marino-hondo);color:#97A1B5;padding:38px 0;font-size:14.5px}
+.pie .envoltura{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.pie .marca img{width:46px;height:46px}
+.pie .marca-texto b{color:#fff;font-size:15.5px}
+.pie .marca-texto span{color:var(--ambar)}
+.pie .legal{text-align:right;line-height:1.55}
+@media(max-width:620px){.pie .legal{text-align:left}}
+</style>
+</head>
+
+<body>
+
+<!-- ============ cinta de contacto ============ -->
+<div class="cinta">
+  <div class="envoltura">
+    <a href="mailto:alimentosminala.ca@gmail.com">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      alimentosminala.ca@gmail.com
+    </a>
+    <span>Lunes a viernes, 8:00 a.m. a 5:00 p.m.</span>
+  </div>
+</div>
+
+<!-- ============ encabezado ============ -->
+<header class="barra">
+  <div class="envoltura">
+    <a class="marca" href="#">
+      <img src="img/minala-isotipo.png" alt="">
+      <span class="marca-texto">
+        <b>ALIMENTOS MINALA</b>
+        <span>CALIDAD QUE NUTRE</span>
+      </span>
+    </a>
+    <nav class="menu">
+      <a href="#servicios">Qué hacemos</a>
+      <a href="#proceso">Cómo funciona</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ portada ============ -->
+<section class="portada">
+  <div class="envoltura">
+    <span class="sello">MAQUILA DE ALIMENTOS</span>
+    <h1>Fabricamos su producto alimenticio en nuestra planta.</h1>
+    <p class="bajada">Usted trae la fórmula o la idea. Nosotros ponemos la
+       infraestructura, la maquinaria y el personal para producir, envasar
+       y etiquetar. Sin que tenga que montar una planta propia.</p>
+    <div class="acciones">
+      <a class="boton boton-claro" href="mailto:alimentosminala.ca@gmail.com">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        Escríbanos
+      </a>
+      <a class="boton boton-linea" href="#servicios">Ver qué hacemos</a>
+    </div>
+  </div>
+</section>
+<div class="franja"></div>
+
+<!-- ============ qué hacemos ============ -->
+<section class="bloque" id="servicios">
+  <div class="envoltura">
+    <h2 class="titulo">Qué hacemos</h2>
+    <p class="entrada">Manufactura por contrato para empresas y emprendedores del
+       sector alimentos. Puede contratar una sola etapa o todo el proceso.</p>
+
+    <div class="tarjetas">
+      <article class="tarjeta">
+        <img loading="lazy" alt="Línea de procesamiento de alimentos en planta"
+             src="https://images.pexels.com/photos/2889193/pexels-photo-2889193.jpeg?auto=compress&cs=tinysrgb&w=800">
+        <div class="cuerpo">
+          <h3>Fabricación por contrato</h3>
+          <p>Producimos su línea de alimentos en nuestra planta, con nuestra
+             maquinaria y nuestro personal, bajo su fórmula y su marca.</p>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <img loading="lazy" alt="Producto avanzando por la línea de envasado"
+             src="https://images.pexels.com/photos/11679691/pexels-photo-11679691.jpeg?auto=compress&cs=tinysrgb&w=800">
+        <div class="cuerpo">
+          <h3>Envasado</h3>
+          <p>Llenado y cierre en el formato y la presentación que su producto
+             necesite para llegar al punto de venta.</p>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <img loading="lazy" alt="Envases de alimentos etiquetados"
+             src="https://images.pexels.com/photos/449518/pexels-photo-449518.jpeg?auto=compress&cs=tinysrgb&w=800">
+        <div class="cuerpo">
+          <h3>Etiquetado</h3>
+          <p>Aplicación de etiquetas y marcaje, listo para despachar y para
+             cumplir con lo que exige el canal donde se vende.</p>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <img loading="lazy" alt="Laboratorio de desarrollo de alimentos"
+             src="https://images.pexels.com/photos/3912509/pexels-photo-3912509.jpeg?auto=compress&cs=tinysrgb&w=800">
+        <div class="cuerpo">
+          <h3>Desarrollo de producto</h3>
+          <p>Si todavía no tiene la fórmula, trabajamos la idea hasta llevarla a
+             un producto que se pueda fabricar de forma estable.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ cómo funciona ============ -->
+<section class="bloque proceso" id="proceso">
+  <div class="envoltura pareja">
+    <div>
+      <h2 class="titulo">Cómo funciona un proyecto de maquila</h2>
+      <p class="entrada">Para quien nunca ha trabajado con manufactura por
+         contrato, así es el camino de principio a fin.</p>
+
+      <div class="pasos">
+        <article class="paso">
+          <div>
+            <h3>Nos cuenta qué quiere producir</h3>
+            <p>El producto, el volumen estimado y para qué canal es. Si ya tiene
+               fórmula, la revisamos; si no, partimos de la idea.</p>
+          </div>
+        </article>
+        <article class="paso">
+          <div>
+            <h3>Definimos alcance y costo</h3>
+            <p>Qué etapas asumimos, qué insumos pone cada parte y cuánto cuesta.
+               Todo queda por escrito antes de producir.</p>
+          </div>
+        </article>
+        <article class="paso">
+          <div>
+            <h3>Prueba de producción</h3>
+            <p>Hacemos un lote de prueba para ajustar fórmula, presentación y
+               rendimiento antes de comprometer una corrida grande.</p>
+          </div>
+        </article>
+        <article class="paso">
+          <div>
+            <h3>Producción y entrega</h3>
+            <p>Fabricamos, envasamos y etiquetamos el lote acordado, y se lo
+               entregamos listo para distribuir bajo su marca.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="foto">
+      <img loading="lazy" alt="Personal seleccionando producto en la línea"
+           src="https://images.pexels.com/photos/8877378/pexels-photo-8877378.jpeg?auto=compress&cs=tinysrgb&w=1000">
+    </div>
+  </div>
+</section>
+
+<!-- ============ banda ============ -->
+<section class="banda">
+  <div class="envoltura">
+    <div>
+      <h2>¿Tiene un producto en mente y no sabe por dónde empezar?</h2>
+      <p>Cuéntenos qué quiere fabricar y le decimos si podemos hacerlo.</p>
+    </div>
+    <a class="boton boton-claro" href="mailto:alimentosminala.ca@gmail.com">Escríbanos</a>
+  </div>
+</section>
+
+<!-- ============ contacto ============ -->
+<section class="contacto" id="contacto">
+  <div class="envoltura">
+    <h2 class="titulo">Hablemos de su proyecto</h2>
+    <p class="entrada">Indíquenos qué producto quiere fabricar, en qué presentación
+       y qué volumen estima, y le respondemos con el alcance y el costo.</p>
+
+    <div class="datos">
+      <div class="dato">
+        <span>CORREO</span>
+        <a class="correo" href="mailto:alimentosminala.ca@gmail.com">alimentosminala.ca@gmail.com</a>
+      </div>
+      <div class="dato">
+        <span>HORARIO</span>
+        <strong>8:00 a.m. a 5:00 p.m.</strong>
+        <em>Lunes a viernes</em>
+      </div>
+      <div class="dato">
+        <span>PLANTA Y OFICINA</span>
+        <strong>Las Mercedes, Caracas</strong>
+        <em>Av. Mucuchíes, Edif. Jimmy, piso 2</em>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ pie ============ -->
+<footer class="pie">
+  <div class="envoltura">
+    <span class="marca">
+      <img src="img/minala-isotipo.png" alt="">
+      <span class="marca-texto">
+        <b>ALIMENTOS MINALA</b>
+        <span>CALIDAD QUE NUTRE</span>
+      </span>
+    </span>
+    <div class="legal">
+      <div>Alimentos Minala A4, C.A. &middot; RIF J-506521172</div>
+      <div>Av. Mucuchíes, Edif. Jimmy, piso 2, Las Mercedes, Caracas</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
