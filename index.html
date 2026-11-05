@@ -12,25 +12,21 @@
 <meta property="og:description" content="Refinación, envasado y etiquetado de aceites comestibles de soya y palma. Maquila por contrato con planta propia.">
 
 <!-- ===================================================================
-     FOTOS: todas de Pexels (licencia libre, uso comercial permitido,
-     atribución no obligatoria). Enlazadas al servidor de Pexels solo
-     para esta maqueta. Antes de publicar hay que descargarlas, meterlas
-     en img/ y cambiar la URL por la ruta local.
+     FOTOS: todas de Pexels (licencia libre, uso comercial, atribucion no
+     obligatoria). Ya NO se enlazan al servidor de Pexels: viven en img/.
+     Si hay que reemplazar alguna, basta con sobrescribir el archivo
+     manteniendo el mismo nombre.
 
-     Portada ........ pexels.com/photo/7598915   (tanques de acero en planta)
-     Refinación ..... pexels.com/photo/31226914  (soya, materia prima)
-     Envasado ....... pexels.com/photo/12284682  (botellas con aceite)
-     Etiquetado ..... pexels.com/photo/31321713  (aceite comestible etiquetado)
-     Calidad ........ pexels.com/photo/3912509   (laboratorio)
-     Proceso ........ pexels.com/photo/9025074   (aceite sirviendose)
-
-     PENDIENTE: el teléfono quedó fuera a propósito. Si más adelante
-     quieren uno, va en la cinta superior y en la sección de contacto.
+     img/portada-planta.jpg ........ pexels.com/photo/7598915
+     img/refinacion-soya.jpg ....... pexels.com/photo/31226914
+     img/envasado-botellas.jpg ..... pexels.com/photo/12284682
+     img/etiquetado-aceite.jpg ..... pexels.com/photo/31321713
+     img/calidad-laboratorio.jpg ... pexels.com/photo/3912509
+     img/proceso-aceite.jpg ........ pexels.com/photo/9025074
      =================================================================== -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://images.pexels.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
@@ -96,7 +92,7 @@ h1,h2,h3,.marca-texto b{font-family:'Montserrat',system-ui,sans-serif}
 /* ---------- portada ---------- */
 .portada{
   position:relative;color:#fff;background-color:var(--marino);
-  background-image:url("https://images.pexels.com/photos/7598915/pexels-photo-7598915.jpeg?auto=compress&cs=tinysrgb&w=1800");
+  background-image:url("img/portada-planta.jpg");
   background-size:cover;background-position:center 48%;
 }
 .portada::before{
@@ -278,7 +274,7 @@ h1,h2,h3,.marca-texto b{font-family:'Montserrat',system-ui,sans-serif}
     <div class="tarjetas">
       <article class="tarjeta">
         <img loading="lazy" alt="Soya, materia prima para aceite comestible"
-             src="https://images.pexels.com/photos/31226914/pexels-photo-31226914.jpeg?auto=compress&cs=tinysrgb&w=800">
+             src="img/refinacion-soya.jpg">
         <div class="cuerpo">
           <h3>Refinación de aceites crudos</h3>
           <p>Procesamos aceite crudo de soya y palma hasta llevarlo a grado comestible: neutralizado, blanqueado y desodorizado.</p>
@@ -287,7 +283,7 @@ h1,h2,h3,.marca-texto b{font-family:'Montserrat',system-ui,sans-serif}
 
       <article class="tarjeta">
         <img loading="lazy" alt="Botellas de aceite en la línea de envasado"
-             src="https://images.pexels.com/photos/12284682/pexels-photo-12284682.jpeg?auto=compress&cs=tinysrgb&w=800">
+             src="img/envasado-botellas.jpg">
         <div class="cuerpo">
           <h3>Envasado</h3>
           <p>Llenado en la presentación que su marca necesite, desde botellas para anaquel hasta formatos grandes para food service.</p>
@@ -296,7 +292,7 @@ h1,h2,h3,.marca-texto b{font-family:'Montserrat',system-ui,sans-serif}
 
       <article class="tarjeta">
         <img loading="lazy" alt="Botellas de aceite comestible etiquetadas"
-             src="https://images.pexels.com/photos/31321713/pexels-photo-31321713.jpeg?auto=compress&cs=tinysrgb&w=800">
+             src="img/etiquetado-aceite.jpg">
         <div class="cuerpo">
           <h3>Etiquetado y marca propia</h3>
           <p>Aplicamos su etiqueta y le entregamos el producto listo para distribuir bajo su marca.</p>
@@ -305,7 +301,7 @@ h1,h2,h3,.marca-texto b{font-family:'Montserrat',system-ui,sans-serif}
 
       <article class="tarjeta">
         <img loading="lazy" alt="Control de calidad en laboratorio"
-             src="https://images.pexels.com/photos/3912509/pexels-photo-3912509.jpeg?auto=compress&cs=tinysrgb&w=800">
+             src="img/calidad-laboratorio.jpg">
         <div class="cuerpo">
           <h3>Control de calidad</h3>
           <p>Verificamos cada lote antes de que salga de la planta, para que el producto llegue parejo al punto de venta.</p>
@@ -357,7 +353,7 @@ h1,h2,h3,.marca-texto b{font-family:'Montserrat',system-ui,sans-serif}
 
     <div class="foto">
       <img loading="lazy" alt="Aceite comestible refinado"
-           src="https://images.pexels.com/photos/9025074/pexels-photo-9025074.jpeg?auto=compress&cs=tinysrgb&w=1000">
+           src="img/proceso-aceite.jpg">
     </div>
   </div>
 </section>
